@@ -1,0 +1,239 @@
+*{
+	padding: 0;margin: 0;box-sizing: border-box;
+}
+
+header{
+	width: 100%;
+	height: 100vh;
+	font-family: sans-serif;
+	background: url(../images/bg1.jpeg);
+	background-size:cover ;
+	background-position: center;
+	-webkit-clip-path: polygon(0% 0%, 100% 0, 100% 73%, 52% 100%, 0 75%);
+clip-path: polygon(0% 0%, 100% 0, 100% 73%, 52% 100%, 0 75%);
+}
+
+
+nav{
+  
+	display: flex;
+    height: 100px;
+	width:100%;
+	justify-content: space-around;
+	align-items: center ;
+	background: black;
+	
+}
+ .logo{
+ 	color: white;
+	font-size: 2rem;
+}
+
+.menu a{
+text-decoration: none;	
+padding: 5px 10px;
+color: white;
+
+position: relative;
+}
+
+
+
+.menu a:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	border-top: 1px solid white;
+    transition: 0.4s linear;
+
+}
+
+
+
+.menu a:hover:before{
+	width: 100%;
+
+}
+
+.h-text{
+	width: 100%;
+	height: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+
+
+.h-text h1{
+	font-size: 3rem ;
+	color: white;
+	margin: 10px 0px;
+}
+
+.h-text a{
+	text-decoration: none;
+	background: black;
+	color: white;
+	padding: 10px 30px;
+	letter-spacing: 5px;
+	position: relative;
+	border-radius: 8px;
+}
+
+.h-text a:before{
+	content:'';
+    position: absolute;
+    top:5px;
+    left:5px;
+    width: 100%;
+    height: 100%;
+    background:white;
+    z-index: -1;
+
+    border: 2px solid white;
+}
+
+.h-text a:hover{
+	background: white;
+	color: palevioletred;
+	transition: 0.2s linear;
+}
+
+.h-text p{
+	color: white;
+}
+
+#about{
+	padding: 100px 50px;
+}
+
+.sec-info{
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+}
+
+.sec-info h1{
+	font-size: 50px;
+}
+
+.sec-info p{
+	font-size: 2rem;
+	color:palevioletred ;
+}
+
+.row{
+	display: flex;
+	justify-content:center ;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.leftrow{
+	flex-basis: 50%;
+}
+
+
+.leftrow img{
+	width: 50%;
+	height: 60%;
+	padding: 50px;
+
+}
+.rightrow{
+		flex-basis: 50%;
+	justify-content: space-around;
+}
+.rightrow p{
+	font-size: 20px;
+	text-align: justify;
+}
+
+ #skills{
+	background-image: linear-gradient(to right top, #000000, #2b2729, #514a51, #78717d, #9e9cae, #9fa5b7, #a0adbe, #a2b6c4, #879ba2, #718082, #5c6564, #484b4a);
+	padding: 100px 50px;
+}
+.skill-info{
+	letter-spacing: 3px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	color: white;
+	font-size: 1.5rem;
+}
+
+.skill-info:hover{
+	color: black;
+	box-shadow: 2px 2px 2px palevioletred;
+	transition: 0.4s;
+}
+
+#services{
+	padding: 150px 50px;
+}
+
+.service-row{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
+}
+.servicebox{
+	margin: 10px 10px;
+	flex-basis: 35%;
+	box-shadow: 4px 2px 4px  palevioletred;
+	padding: 20px;
+	
+
+}
+
+.servicebox:hover{
+	color: white;
+	background:palevioletred ;
+	transition: 0.4s;
+}
+
+#footer{
+	padding: 90px 5px;
+}
+
+.resume img{
+	display: block;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+
+}
+
+#hobbies{
+	
+	flex-basis: 90%;
+	
+}
+
+
+.imgs img{
+	border: 2px solid palevioletred;
+	margin: 5px;
+	padding: 5px 10px;
+	justify-content:space-around;
+	border-radius: 10px;
+	height: 300px;
+	width: 200px;
+}
+.imgs{
+	display: flex;	
+	justify-content: center;
+}
+
+.sk{
+	padding-bottom: 10px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
